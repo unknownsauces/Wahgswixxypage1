@@ -1,0 +1,43 @@
+*{
+  font-family: 'Satisfy', cursive;
+}
+.cursive{
+  font-family: 'Parisienne', cursive !important;
+}
+.header1{font-family: 'Jim Nightshade', cursive;}
+.header2{font-family: 'Shadows Into Light', cursive;}
+
+
+.XXX{
+  background: rgb(247, 156, 48);
+  text-decoration: none;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+}
+.XXX:hover {
+  border-radius: 1rem;
+}
+.XXX:hover::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+          border-radius: 1rem;
+}
+.XXX:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  transition: -webkit-transform .8s ease-out;
+  transition: transform .8s ease-out;
+  transition: transform .8s ease-out, -webkit-transform .8s ease-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  background: rgb(237, 146, 58);
+  border-radius: 1rem;
+}
+.btn a{ text-decoration: none;}
